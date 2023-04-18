@@ -13,17 +13,17 @@ namespace MVCDemo.Controllers
         {
            string nagarjuna="nagarjuna";
             EmployeeContext employeeContext = new EmployeeContext();
-           List<Employee> emp = employeeContext.Employees.ToList();
+           List<Employee> employee = employeeContext.Employees.ToList();
 
-            return View(emp);
+            return View(employee);
         }
     
         public ActionResult GetDetails(int id)
         {
             EmployeeContext employeeContext = new EmployeeContext();
-            Employee employee =  employeeContext.Employees.Single(emp => emp.EmployeeId == id);
+            Employee emp =  employeeContext.Employees.Single(emp => emp.EmployeeId == id);
             
-            return View(employee);
+            return View(emp);
         }
     }
 }
