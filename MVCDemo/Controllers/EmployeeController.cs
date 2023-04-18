@@ -20,9 +20,9 @@ namespace MVCDemo.Controllers
         public ActionResult GetDetails(int id)
         {
             EmployeeContext employeeContext = new EmployeeContext();
-            Employee employee =  employeeContext.Employees.Single(emp => emp.EmployeeId == id);
+            Employee emp =  employeeContext.Employees.Single(emp => emp.EmployeeId == id);
             
-            return View(employee);
+            return View(emp);
         }
     }
 }
