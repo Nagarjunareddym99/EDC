@@ -12,9 +12,9 @@ namespace MVCDemo.Controllers
         public ActionResult Index()
         {
             EmployeeContext employeeContext = new EmployeeContext();
-           List<Employee> emp = employeeContext.Employees.ToList();
+           List<Employee> employee = employeeContext.Employees.ToList();
 
-            return View(emp);
+            return View(employee);
         }
     
         public ActionResult GetDetails(int id)
