@@ -11,6 +11,7 @@ namespace MVCDemo.Controllers
     {
         public ActionResult Index()
         {
+           string nagarjuna="nagarjuna";
             EmployeeContext employeeContext = new EmployeeContext();
            List<Employee> emp = employeeContext.Employees.ToList();
 
